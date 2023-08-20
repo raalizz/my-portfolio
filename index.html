@@ -20,6 +20,17 @@
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://kit.fontawesome.com/6eae258bbb.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="style.css" />
     <title>Raghda A. Al-Shaikhli portfolio</title>
   </head>
@@ -27,7 +38,7 @@
     <nav class="navbar navbar-expand-lg background sticky-top">
       <div class="container">
         <a class="navbar-brand">
-          <img src="images/coding.png" class="logo" alt="logo" title="logo" />
+          <img src="images/logo.png" class="logo" alt="logo" title="logo" />
         </a>
         <button
           class="navbar-toggler"
@@ -52,105 +63,96 @@
         </div>
       </div>
     </nav>
-    <h2>👋🏻 Hi I am</h2>
+    <h2>Hi I am</h2>
     <h1>Raghda A. Al-Shaikhli</h1>
-    <h3 class="description-1">🇺🇸 Front-end developer, based in Europe</h3>
-    <div class="buttons">
-      <a href="contact.html">
-        <button class="contact">Contact me</button>
-      </a>
-      <a href="about.html">
-        <button class="about">About me</button>
-      </a>
-    </div>
+    <h3 class="description-index">Front-end developer, based in Europe</h3>
 
-    <div class="container p-5">
-      <div class="row">
-        <div class="col-sm-6">
+    <div
+      class="container-index border border-dark-subtle border-opacity-10 p-5 m-5"
+    >
+      <div class="slider">
+        <span id="slide-1"></span>
+        <span id="slide-2"></span>
+        <span id="slide-3"></span>
+        <div class="image-container">
           <img
             src="images/hobbyproject.png"
-            class="img-fluid rounded p-2 shadow-lg"
+            class="slide"
+            width="500"
+            height="300"
             alt="screenshot of my hobby project"
-            title=" my hobby project"
+            title="hobby project"
           />
-        </div>
-        <div class="col-sm-6">
-          <h2 class="title mb-3">Hobby Project</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-            quia, dignissimos nam ratione veniam quibusdam porro omnis quam vel
-            eos eveniet alias temporibus deserunt veritatis minima fugiat
-            explicabo eum dolore
-          </p>
-          <button class="btns">
-            <a
-              href="https://nature-photography-project.netlify.app/"
-              class="text-decoration-none project-links"
-              target="_blank"
-            >
-              Launch Hobby Project
-            </a>
-          </button>
-        </div>
-      </div>
-
-      <div class="row mt-5">
-        <div class="col-sm-6">
-          <h2 class="title mb-3">Weather App</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-            quia, dignissimos nam ratione veniam quibusdam porro omnis quam vel
-            eos eveniet alias temporibus deserunt veritatis minima fugiat
-            explicabo eum dolore
-          </p>
-          <button class="btns">
-            <a
-              href="https://myweather-app-project.netlify.app/"
-              target="_blank"
-              class="text-decoration-none project-links"
-            >
-              Launch Weather App
-            </a>
-          </button>
-        </div>
-        <div class="col-sm-6">
           <img
             src="images/weatherapp.png"
-            class="img-fluid rounded p-2 shadow-lg mt-4"
-            alt="a screenshot of the weather app"
-            title="weather project"
+            class="slide"
+            width="500"
+            height="300"
+            alt="screenshot of the weather app"
+            title="weather app"
           />
-        </div>
-      </div>
-
-      <div class="row mt-5">
-        <div class="col-sm-6">
           <img
             src="images/worldclock.png"
-            class="img-fluid rounded p-2 shadow-lg"
-            alt="a screenshot of the world clock project"
-            title="world clock project"
+            class="slide"
+            width="500"
+            height="300"
+            alt="screenshot of the world clock app"
+            title="world clock app"
           />
         </div>
-        <div class="col-sm-6">
-          <h2 class="title mb-3">World Clock App</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Dignissimos, dicta. Quibusdam velit, dolor labore ipsam odit aliquid
-            autem tempore, inventore rerum harum assumenda, exercitationem
-            fugit. Dolores rerum quasi ipsa similique.
-          </p>
-          <button class="btns">
-            <a
-              href="https://worldclockproject-js.netlify.app/"
-              target="_blank"
-              class="text-decoration-none project-links"
-            >
-              Launch World Clock App
-            </a>
-          </button>
+        <div class="buttons">
+          <a href="#slide-1"></a>
+          <a href="#slide-2"></a>
+          <a href="#slide-3"></a>
         </div>
       </div>
     </div>
+
+    <div class="btn-index pt-5">
+      <a href="contact.html">
+        <button class="btns">Contact me</button>
+      </a>
+    </div>
+
+    <div class="social-media d-flex justify-content-center pt-3">
+      <a href="https://github.com/raalizz" title="Github" target="_blank">
+        <i class="fa-brands fa-github icons" style="color: #995db5"></i>
+      </a>
+
+      <a
+        href="https://www.linkedin.com/in/raghdaalizz"
+        title="Linkedin"
+        target="_blank"
+      >
+        <i class="fa-brands fa-linkedin icons" style="color: #995db5"> </i>
+      </a>
+
+      <a href="mailto:raalizz.h@gmail.com" title="Email">
+        <i class="fa-solid fa-envelope icons" style="color: #995db5"></i>
+      </a>
+
+      <a
+        href="https://www.instagram.com/raghda.alizz"
+        title="Instagram"
+        target="_blank"
+      >
+        <i class="fa-brands fa-instagram icons" style="color: #995db5"></i>
+      </a>
+    </div>
+
+    <footer>
+      <div class="signature">
+        open-source code by
+        <a
+          href=""
+          title="portfolio's repository"
+          target="_blank"
+          style="color: #000"
+          class="text-decoration-none"
+        >
+          RA</a
+        >
+      </div>
+    </footer>
   </body>
 </html>

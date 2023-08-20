@@ -7,7 +7,7 @@
 
 body {
   background-color: var(--main-background-color);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "PT Mono", monospace;
 }
 h1,
 h2,
@@ -21,40 +21,40 @@ h2 {
 }
 
 h1 {
+  font-weight: 900;
   font-size: 70px;
   padding: 10px;
 }
-.description-1 {
+.project-header {
+  font-family: "Monofett", monospace;
+  font-size: 70px;
+}
+.description-index {
   display: block;
   font-size: 25px;
   color: var(--secondary-color);
   padding: -10px;
 }
-.buttons {
+.btn-index {
   display: flex;
   justify-content: center;
   gap: 10px;
   margin-top: 60px;
 }
-.contact {
+
+.btns {
   border: 1px solid var(--primary-color);
-  border-radius: 3px;
+  border-radius: 10px;
   margin-right: 20px;
-  padding: 20px;
-  font-size: 15px;
-  background-color: var(--primary-color);
-  color: var(--main-background-color);
-  box-shadow: var(--box-shadow);
-}
-.about {
-  border: 1px solid var(--primary-color);
-  border-radius: 3px;
-  margin-right: 20px;
-  padding: 20px;
+  padding: 10px 20px 10px 20px;
   font-size: 15px;
   background-color: var(--main-background-color);
   color: var(--primary-color);
   box-shadow: var(--box-shadow);
+}
+.btns:hover {
+  color: #fff;
+  background-color: var(--primary-color);
 }
 .homepage {
   text-align: center;
@@ -67,7 +67,7 @@ h1 {
   margin-top: 50px;
   font-size: 100px;
 }
-.description {
+.description-about {
   text-align: center;
   font-size: 25px;
   margin-top: -10px;
@@ -78,7 +78,7 @@ h1 {
   text-align: center;
   font-size: 40px;
   color: #000;
-  margin-top: 200px;
+  margin-top: 50px;
 }
 .email {
   display: flex;
@@ -94,14 +94,12 @@ h1 {
 .email:visited {
   color: #551a8b;
 }
-.contact:hover {
-  color: var(--secondary-color);
-}
-.about:hover {
-  color: var(--secondary-color);
-}
+
 .logo {
-  max-width: 200px;
+  max-width: 100px;
+}
+.logo:hover {
+  transform: scale(1.2);
 }
 .background {
   background: rgba(225, 221, 221, 0.45);
@@ -117,29 +115,25 @@ h1 {
 .title {
   text-align: left;
   margin-top: 7px;
+  font-weight: bolder;
 }
-.btns {
-  border: 1px solid var(--primary-color);
-  border-radius: 3px;
-  margin-right: 20px;
-  padding: 20px;
-  font-size: 15px;
-  background-color: var(--primary-color);
-  color: var(--main-background-color);
-  box-shadow: var(--box-shadow);
-}
+
 .project-links {
-  color: var(--main-background-color);
+  color: var(--primary-color);
 }
 .project-links:hover {
-  color: var(--secondary-color);
+  color: #fff;
 }
 
-.pictures {
+.container-index {
   max-width: 100%;
   height: auto;
+  display: block;
 }
-
+.my-picture {
+  margin-left: 120px;
+  box-shadow: var(--box-shadow);
+}
 .icons {
   margin-top: 15px;
   margin-bottom: 20px;
@@ -150,10 +144,21 @@ h1 {
 .icons:hover {
   transform: scale(1.5);
 }
+.project-icons {
+  margin-top: 30px;
+  margin-left: -25px;
+
+  font-size: 30px;
+  padding: 0px 20px;
+  transition: all 200ms ease-in-out;
+}
+.project-icons:hover {
+  transform: scale(1.5);
+}
 .signature {
   text-align: right;
   font-family: bitter;
-  color: #000;
+
   margin-right: 20px;
   font-size: 12px;
   margin-bottom: 5px;
@@ -162,4 +167,56 @@ h1 {
   .signature {
     text-align: center;
   }
+}
+
+.slider {
+  max-width: 500px;
+  height: 300px;
+  background-color: var(--main-background-color);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  text-align: center;
+  overflow: hidden;
+}
+.image-container {
+  width: 1500px;
+  background-color: var(--main-background-color);
+  height: 300px;
+  clear: both;
+  position: relative;
+  -webkit-transition: left 2s;
+  -moz-transition: left 2s;
+  -o-transition: left 2s;
+  transition: left 2s;
+}
+.slide {
+  float: left;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+}
+#slide-1:target ~ .image-container {
+  left: 0px;
+}
+#slide-2:target ~ .image-container {
+  left: -500px;
+}
+#slide-3:target ~ .image-container {
+  left: -1000px;
+}
+.buttons {
+  position: relative;
+  top: -20px;
+}
+.buttons a {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  border-radius: 50px;
+  background-color: var(--primary-color);
+}
+
+.contact-header {
+  padding-top: 150px;
 }
