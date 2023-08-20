@@ -167,6 +167,12 @@ h1 {
   .signature {
     text-align: center;
   }
+  .title {
+    text-align: center;
+  }
+  .project-info {
+    text-align: center;
+  }
 }
 
 .slider {
