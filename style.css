@@ -173,6 +173,12 @@ h1 {
   .project-info {
     text-align: center;
   }
+  h1 {
+    font-size: 50px;
+  }
+  .about-me {
+    font-size: 70px;
+  }
 }
 
 .slider {
