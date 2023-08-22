@@ -129,6 +129,7 @@ h1 {
   max-width: 100%;
   height: auto;
   display: block;
+  margin: 0 auto;
 }
 .my-picture {
   margin-left: 120px;
@@ -180,7 +181,6 @@ h1 {
     font-size: 70px;
   }
 }
-
 .slider {
   max-width: 500px;
   height: 300px;
@@ -202,11 +202,14 @@ h1 {
   -o-transition: left 2s;
   transition: left 2s;
 }
-.slide {
+.slide-1,
+.slide-2,
+.slide-3 {
   float: left;
   margin: 0px;
   padding: 0px;
   position: relative;
+  border-radius: 16px;
 }
 #slide-1:target ~ .image-container {
   left: 0px;
