@@ -124,7 +124,9 @@ h1 {
   background-color: #fff;
 }
 .my-picture {
-  margin-left: 120px;
+  display: flex;
+  height: auto;
+  margin: 0 auto;
   box-shadow: var(--box-shadow);
 }
 .icons {
@@ -170,6 +172,9 @@ h1 {
   }
   .about-row {
     margin-right: 50px;
+  }
+  .my-picture {
+    margin-top: 20px;
   }
 }
 .slider {
