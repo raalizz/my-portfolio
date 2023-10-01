@@ -193,15 +193,12 @@ h1 {
   height: 300px;
   clear: both;
   position: relative;
-  -webkit-transition: left 2s;
-  -moz-transition: left 2s;
-  -o-transition: left 2s;
-  transition: left 2s;
+  display: flex;
 }
 .slide-1,
 .slide-2,
-.slide-3 {
-  float: left;
+.slide-3,
+.slide-4 {
   margin: 0px;
   padding: 0px;
   position: relative;
@@ -215,6 +212,9 @@ h1 {
 }
 #slide-3:target ~ .image-container {
   left: -1000px;
+}
+#slide-4:target ~ .image-container {
+  left: -1500px;
 }
 .buttons {
   position: relative;
